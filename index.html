@@ -579,7 +579,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -610,7 +610,32 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="container">
+
+              <h1>Contact me </h1>
+
+              <form target="_blank" action="https://formsubmit.co/nagimbasher@gmail.com" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              </form>
+            </div>
+          
+
+<!--    
+            <form onsubmit="sendEmail(nagimbasher); resent(); return false;">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -636,10 +661,11 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
+          -->
+        
 
         </div>
-
+      </div>
       </div>
     </section><!-- End Contact Section -->
 
